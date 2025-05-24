@@ -1,0 +1,15 @@
+<h1>Reports</h1>
+
+<h2>Most Used Props</h2>
+<ul>
+  {% for item in most_used %}
+    <li>{{ item.prop__name }} - {{ item.total }} uses</li>
+  {% endfor %}
+</ul>
+
+<h2>Damaged or Missing Props</h2>
+<ul>
+  {% for item in damaged_or_missing %}
+    <li>{{ item.prop__name }} - {{ item.total }} incidents</li>
+  {% endfor %}
+</ul>
